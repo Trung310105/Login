@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trung</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="w-screen h-screen flex flex-col items-center gap-[100px] z-0">
+
+    <div class="w-full h-[10%] shadow-lg flex justify-end items-center pr-[20px]">
+        <i class='menu bx bx-menu text-6xl'></i>
+    </div>
+
+    <div class="h-full w-[20%] bg-white-300 absolute left-0 transition-all duration-500 shadow-xl flex flex-col text-2xl translate-x-[-9999px] font-normal">
+        <div class="w-full h-[10%]">
+
+        </div>
+        <div class="w-full h-[7%] flex justify-start items-center bg-lime-50 gap-[30px] pl-[20px] text-lime-500">
+            <i class='bx bxs-home'></i>
+            <p>Trang chủ</p>
+        </div>
+        <div class="w-full h-[7%] flex justify-start items-center gap-[30px] pl-[20px] hover:bg-gray-100">
+            <i class='bx bxs-home'></i>
+            <p>Đào tạo</p>
+        </div>
+        <div class="w-full h-[7%] flex justify-start items-center gap-[30px] pl-[20px] hover:bg-gray-100">
+            <i class='bx bxs-home'></i>
+            <p>Hoạt động</p>
+        </div>
+        <div class="w-full h-[7%] flex justify-start items-center gap-[30px] pl-[20px] hover:bg-gray-100">
+            <i class='bx bxs-home'></i>
+            <p>Thành viên</p>
+        </div>
+    </div>
+
+    <div class="w-full h-[15%] flex flex-col justify-center items-center gap-[18px] text-justify">
+        <p class="text-6xl font-bold">Các câu hỏi thường gặp</p>
+        <p class="text-xl text-gray-600">Dưới đây là những câu hỏi phổ biến thường được các bạn dành cho CLB.</p>
+    </div>
+
+    <div class="w-full flex flex-col justify-center items-center">
+        <div class="w-[70%]">
+            <div class="flex flex-col rounded-lg py-[10px]">
+                <div class="box text-xl flex justify-between px-[20px] py-[4px] text-justify select-none">
+                    <p>1. Lịch sử hình thành của CLB</p>
+                    <i class='bx bx-chevron-down transition-all duration-500 rotate-0'></i>
+                </div>
+                <div class="text-xl px-[20px] py-[5px] max-h-0 transition-all duration-[1s] text-justify overflow-hidden">
+                    <strong class="uppercase">IT PTIT Club</strong> là câu lạc bộ học thuật trực thuộc khoa CNTT 1 của Học viện Công nghệ Bưu chính Viễn thông. CLB được hình thành từ sự hợp nhất của 2 CLB kỳ cựu nhất trong Học viện là CLB SRC PTIT và một số thành viên của CLB lập trình Pro PTIT vào năm 2013. Sau 10 năm hợp nhất, IT PTIT đã đạt được rất nhiều thành công lớn.
+                </div>
+            </div>
+        </div>
+        <div class="w-[70%]">
+            <div class="flex flex-col rounded-lg py-[10px]">
+                <div class="box text-xl flex justify-between px-[20px] py-[4px] text-justify select-none">
+                    <p>2. CLB có chức năng gì?</p>
+                    <i class='bx bx-chevron-down transition-all duration-500 rotate-0'></i>
+                </div>
+                <div class="text-xl px-[20px] py-[5px] max-h-0 transition-all duration-[1s] text-justify overflow-hidden">
+                    <ul class="list-disc list-inside">
+                        <li>Gắn kết các thành viên CLB với Khoa CNTT và Học viện. Kết nối sinh viên với các cuộc thi và giới thiệu các cơ hội nghề nghiệp.</li>
+                        <li>Là môi trường học tập sáng tạo, năng động, giúp đỡ thành viên CLB đạt thành tích cao trong học tập, phát triển tốt các kỹ năng chuyên môn.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-[70%]">
+            <div class="flex flex-col rounded-lg py-[10px]">
+                <div class="box text-xl flex justify-between px-[20px] py-[4px] text-justify select-none">
+                    <p>3. CLB có nhiệm vụ gì?</p>
+                    <i class='bx bx-chevron-down transition-all duration-500 rotate-0'></i>
+                </div>
+                <div class="text-xl px-[20px] py-[5px] max-h-0 transition-all duration-[1s] text-justify overflow-hidden">
+                    <ul class="list-disc list-inside">
+                        <li>Hỗ trợ phát triển tư duy và kĩ năng lập trình.</li>
+                        <li>Phối hợp với khoa CNTT1 tổ chức các chương trình giao lưu, cuộc thi cho sinh viên.</li>
+                        <li>Tổ chức các hội thảo chuyên đề giúp các thành viên có cơ hội tiếp xúc với diễn giả uy tín.</li>
+                        <li>Tổ chức các hoạt động sự kiện, giải đấu giúp gắn kết các thành viên trong CLB.</li>
+                        <li>Mở rộng tìm kiếm và tham gia các cuộc thi có phạm vi ngoài Học viện.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
