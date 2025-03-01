@@ -24,38 +24,38 @@ function Profile()
 
 function renderHome()
 {
-    if(localStorage.getItem("check") == null)
-    {
+    // if(localStorage.getItem("check") == null)
+    // {
         document.querySelector('#main').innerHTML = Navbar();
 
         document.querySelector('#login').addEventListener('click', () =>{
             router.navigate('/login');
             console.log(document.querySelector('#login'))
         })
-    }
-    else
-    {
-        document.querySelector('#main').innerHTML = `
-            ${Profile()}
+    // }
+    // else
+    // {
+    //     document.querySelector('#main').innerHTML = `
+    //         ${Profile()}
 
-            <div id="username" class="w-[18%] h-0 rounded-md shadow-lg text-xl trasition-all duration-500">
-                <p></p>
-            </div>
-        `
-        document.getElementById("profile").addEventListener('click', () => {
-            const $user = document.getElementById(username);
-            if($user.classList.contains('h-0'))
-            {
-                $user.classList.remove('h-0');
-                $user.classList.add('h-[50px]');
-            }
-            else
-            {
-                $user.classList.remove('h-[50px]');
-                $user.classList.add('h-0');
-            }
-        })
-    }
+    //         <div id="username" class="w-[18%] h-0 rounded-md shadow-lg text-xl trasition-all duration-500">
+    //             <p></p>
+    //         </div>
+    //     `
+    //     document.getElementById("profile").addEventListener('click', () => {
+    //         const $user = document.getElementById(username);
+    //         if($user.classList.contains('h-0'))
+    //         {
+    //             $user.classList.remove('h-0');
+    //             $user.classList.add('h-[50px]');
+    //         }
+    //         else
+    //         {
+    //             $user.classList.remove('h-[50px]');
+    //             $user.classList.add('h-0');
+    //         }
+    //     })
+    // }
 }
 
 export {renderHome, Navbar};

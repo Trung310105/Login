@@ -50,7 +50,6 @@ function renderLogin(){
                 })
                 .then( data => {
                     alert("Đăng nhập thành công")
-                    localStorage.setItem('check', true);
                     localStorage.setItem('token', data.token);
                     location.href = "./index.html"
                 })

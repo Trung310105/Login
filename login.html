@@ -31,40 +31,5 @@
             </form>
         </div>
     </div>
-    <script type="module">
-        document.querySelector('#btn').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const tk = document.getElementById("username").value;
-            const mk = document.getElementById("password").value;
-            let tkmk = {
-                username : tk,
-                password : mk,
-            }      
-            if(tk === "" || mk === "")
-            {
-                alert("Vui lòng nhập đủ thông tin");
-            }
-            else
-            {
-                localStorage.setItem("user", JSON.stringify(tkmk));
-                fetch("https://auth-wit.vercel.app/auth/login", {
-                    method: "POST",
-                    body: JSON.stringify(tkmk),
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                })
-                    .then(response => response.json())
-                    .then( data => {
-                        alert("Đăng nhập thành công")
-                        
-                    })
-                    .catch(error => {
-                        alert("Tài khoản hoặc mật khẩu không chính xác")
-                        location.href = "./login.html"
-                    })
-            }
-        })
-    </script>
 </body>
 </html>
