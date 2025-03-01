@@ -19,7 +19,7 @@ function renderLogin(){
         </div>
     `;
 
-    document.querySelector('#btn').addEventListener('submit', function(event) {
+    document.querySelector('#btn').addEventListener('submit', function(e) {
         event.preventDefault();
         const tk = document.getElementById("username").value;
         const mk = document.getElementById("password").value;
@@ -51,7 +51,7 @@ function renderLogin(){
                 .then( data => {
                     alert("Đăng nhập thành công")
                     localStorage.setItem('token', data.token);
-                    location.href = "./index.html"
+                    // location.href = "./index.html"
                 })
                 .catch(error => {
                     alert("Tài khoản hoặc mật khẩu không chính xác")
