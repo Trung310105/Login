@@ -55,7 +55,7 @@ function renderLogin(){
                 })
                 .catch(error => {
                     alert("Tài khoản hoặc mật khẩu không chính xác")
-                    location.href = "/test.html"
+                    // location.href = "/test.html"
                 })
         }
     })
