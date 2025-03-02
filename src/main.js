@@ -2,6 +2,8 @@ import Navigo from 'navigo';
 import { renderHome } from './pages/renderHome';
 import { renderLogin } from './pages/renderLogin';
 
+const $main = document.getElementById("main");
+
 const router = new Navigo('/');
 
 router.on('/', () => {
@@ -14,4 +16,4 @@ router.on('/login', () => {
 
 router.resolve();
 
-export {router}
+export {router, $main}
